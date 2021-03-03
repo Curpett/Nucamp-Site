@@ -21,12 +21,12 @@
 </head>
 
 <body>
-
+    <a role="button" href="#main">Skip to Main</a>
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a href="index.html"><img src="img/logo.png" class="img-fluid"></a>
+                    <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="nucamp logo"></a>
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
@@ -37,7 +37,7 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav role="navigation" class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
@@ -54,96 +54,97 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Contact</li>
-                </ol>
-                <h2>Contact Us</h2>
-                <hr />
+    <main id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Contact</li>
+                    </ol>
+                    <h2>Contact Us</h2>
+                    <hr />
+                </div>
             </div>
-        </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4">
-                <h5>Our Address</h5>
-                <address>
-                    1 Nucamp Way<br />
-                    Seattle, WA 98001<br />
-                    U.S.A.
-                </address>
+            <div class="row row-content align-items-center">
+                <div class="col-sm-4">
+                    <h5>Our Address</h5>
+                    <address>
+                        1 Nucamp Way<br />
+                        Seattle, WA 98001<br />
+                        U.S.A.
+                    </address>
+                </div>
+                <div class="col">
+                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                </div>
             </div>
-            <div class="col">
-				<a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
-            	<a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
-            </div>
-        </div>
 
-        <div class="row row-content">
-            <div class="col-12">
-                <h2>Send us your Feedback</h2>
-                <hr />
-            </div>
-            <div class="col-md-10">
-                <form>
-                    <div class="form-group row">
-                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
-                        <div class="col 5 col-md-3">
-                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code">
-                        </div>
-                        <div class="col-7">
-                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="email" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col offset-md-2">
-                            May we contact you?
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes">
-                                <label for="contactYes" class="form-check-label">Yes</label>
-                            </div>    
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no">
-                                <label for="contactNo" class="form-check-label">No</label>
+            <div class="row row-content">
+                <div class="col-12">
+                    <h2>Send us your Feedback</h2>
+                    <hr />
+                </div>
+                <div class="col-md-10">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
                             </div>
-                        </div>    
-                    </div>
-                    <div class="form-group row">
-                        <label for="yourFeedback" class="col-md-2 col-form-label">Your Feedback</label>
-                        <div class="col-md-10">
-                            <textarea name="feedback" class="form-control" id="yourFeedback" rows="8"></textarea>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        <div class="form-group row">
+                            <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-       </div>
-
-    </div>
+                        <div class="form-group row">
+                            <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                            <div class="col 5 col-md-3">
+                                <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code">
+                            </div>
+                            <div class="col-7">
+                                <input type="tel" class="form-control" name="telNum" placeholder="Tel. number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col offset-md-2">
+                                May we contact you?
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes">
+                                    <label for="contactYes" class="form-check-label">Yes</label>
+                                </div>    
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no">
+                                    <label for="contactNo" class="form-check-label">No</label>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="form-group row">
+                            <label for="yourFeedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-10">
+                                <textarea name="feedback" class="form-control" id="yourFeedback" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        </div>
+    </main>
 
     <footer class="site-footer">
         <div class="container">
